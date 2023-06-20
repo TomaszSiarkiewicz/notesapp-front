@@ -1,13 +1,148 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    height: 99vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+
+    min-height: 75px;
+    max-height: 15%;
+}
+.footer{
+    background-color: azure;
+    display: inline-flex;
+    max-height: 10%;
+    padding: 5%;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-title{
+    text-align: center;
+    width: 100%;
+}
+.title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    background: azure;
+    padding:20px;
+    height: 75%
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: azure;
+    padding: 1rem;
+    min-width: 300px;
+    width: 30%;
+    max-height: 100%;
+}
+.sidebar-note {
+    border-radius: 10px;
+    background-color: #fef68a;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.sidebar-wrapper{
+    overflow-y: auto;
+    width: 90%;
+}
+
+.submain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    min-width: 600px;
+
+    max-height: 100%;
+}
+.no-active-notes{
+    min-width: 150px;
+    width: 50%;
+    padding: 1rem;
+}
+
+.note-edit {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    width: 50%;
+    background: azure;
+    padding: 20px;
+}
+.note-new {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    width: 50%;
+    background: azure;
+    padding: 20px;
+}
+.title{
+
+    border-radius: 2rem;
+    background-color: #fef68a;
+    font-size: 2rem;
+    border: none;
+    resize: none;
+    width: 80%;
+    padding: 1rem;
+}
+.content{
+    border-radius: 2rem;
+    background-color: #fef68a;
+    font-size: 1.5rem;
+    border: none;
+    resize: none;
+    width: 80%;
+    padding: 1rem;
+    height: 60%;
+}
+
+
